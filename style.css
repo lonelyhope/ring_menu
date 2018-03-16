@@ -1,0 +1,232 @@
+#button {
+    border-color: white;
+    /* background-color: red; */
+    position: relative;
+    left: 50%;
+    top: 500px;
+}
+
+#button, .apb {
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.apb {
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    border-color: #939094;
+    background-color: #939094;
+    background-image: url(assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: 32%;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.65);
+    transition: 1s;
+    transition-delay: 1.5s;
+}
+
+#button:hover .apb {
+    border-color: blue;
+    background-color: blue;
+    background-image: url(assets/images/atplus_green.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    transform: scale(1, 1);
+    transition-delay: 0s;
+}
+
+.info {
+    width: 130px;
+    height: 130px;
+    border-style: solid;
+    border-color: gray;
+    background-color: gray;
+    position: absolute;
+    border-radius: 50%;
+    left: -43px;
+    top: -51px;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 1s;
+    opacity: 1;
+    transition-delay: 0.8s;
+    color: white;
+    font-weight: bold;
+}
+
+#button:hover .info {
+    visibility: visible;
+    transform: scale(1, 1);
+    left: -45px;
+    top: -159px;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+ul {
+    list-style: none;
+}
+
+li.page.user {
+    font-size: 20px;
+    width: 50px;
+    /* height: 40px; */
+    list-style: none;
+    margin: 0px;
+    left: 39px;
+    position: absolute;
+    top: 6px;
+}
+
+img.pui {
+    width: 27px;
+    margin-right: 10px;
+}
+
+span.pun {
+    font-size: 22px;
+    position: absolute;
+    top: 3px;
+}
+
+img.pci {
+    width: 30px;
+    /* height: 50px; */
+    margin-right: 10px;
+}
+
+li.page.comment {
+    list-style: none;
+    position: absolute;
+    top: 45px;
+    left: 35px;
+}
+
+span.pcn {
+    font-size: 37px;
+}
+
+li.mine.posted {
+    position: absolute;
+    left: 18px;
+    top: 92px;
+}
+
+img.mpi {
+    margin-right: 8px;
+}
+
+span.mpn, span.mln {
+    font-size: 22px;
+    position: absolute;
+    top: -5px;
+    color: #079E6E;
+    font-weight: bold;
+}
+
+li.mine.like {
+    position: absolute;
+    left: 73px;
+    top: 92px;
+}
+
+img.mli {
+    margin-right: 8px;
+}
+
+li.mask.button, li.history.button, li.message.button, li.setting.button, li.sign.button {
+    border-style: solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-color: gray;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 4.5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition-delay: 0.8s;
+}
+
+li.mask.button {
+    background-image: url(assets/images/mask.png);
+}
+
+#button:hover li.mask.button{
+    opacity: 1;
+    transform: translate(-70px, -35px);
+    visibility: visible;
+    transition: 1s;
+}
+
+li.history.button {
+    background-image: url(assets/images/history.png);
+}
+
+#button:hover li.history.button{
+    opacity: 1;
+    transform: translate(-80px, 16px);
+    visibility: visible;
+    transition: 1s;
+}
+
+li.message.button {
+    background-image: url(assets/images/message.png);
+    opacity: 0;
+}
+
+#button:hover li.message.button {
+    opacity: 1;
+    transform: translate(-60px, 60px);
+    visibility: visible;
+    transition: 1s;
+}
+
+span.unread {
+    font-size: 12px;
+    position: absolute;
+    left: 17px;
+    top: -8px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: solid;
+    border-color: red;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    vertical-align: super;
+}
+
+li.setting.button {
+    background-image: url(assets/images/setting.png);
+}
+
+#button:hover li.setting.button {
+    opacity: 1;
+    transform: translate(-15px, 80px);
+    visibility: visible;
+    transition: 1s;
+}
+
+li.sign.button {
+    background-image: url(assets/images/signin.png);
+}
+
+#button:hover li.sign.button {
+    opacity: 1;
+    transform: translate(35px, 80px);
+    visibility: visible;
+    transition: 1s;
+}
